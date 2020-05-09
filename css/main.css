@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+:root {
+    --mainWhite: #0e153a;
+    --mainGreen: #22d1ee;
+    --mainBlack: #333333;
+    --mainRed: #d62828;
+    --mainBlue: #11b5e4;
+}
+
+body {
+    background: var(--mainWhite);
+    color: #fff;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn-green {
+    border-color: var(--mainGreen);
+    background: transparent;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background: var(--mainGreen);
+    color: #000000;
+}
+
+.form-control {
+    border-color: var(--mainGreen) !important;
+}
+
+.feedback {
+    display: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.complete-item {
+    color: var(--mainGreen);
+}
+
+.complete-item:hover {
+    color: var(--mainGreen);
+}
+
+.edit-item {
+    color: var(--mainBlue);
+}
+
+.edit-item:hover {
+    color: var(--mainBlue);
+}
+
+.delete-item {
+    color: var(--mainRed);
+}
+
+.delete-item:hover {
+    color: var(--mainRed);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.visibility {
+    opacity: 0.5;
+}
+
+.showItem {
+    display: block;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+}
